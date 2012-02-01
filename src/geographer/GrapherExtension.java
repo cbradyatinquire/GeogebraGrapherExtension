@@ -233,6 +233,7 @@ public class GrapherExtension extends DefaultClassManager {
 		public void addGrapherPane( GeoGebraPanel ggp )
 		{
 			this.add( ggp );
+			
 		}
 		
 	}

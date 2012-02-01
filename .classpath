@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="/Applications/NetLogo 5.0RC6/NetLogo.jar"/>
+	<classpathentry kind="lib" path="/Users/cbrady/Documents/workspace/DavidGrapher/libModGeogebra42/jython.jar"/>
+	<classpathentry kind="lib" path="/Users/cbrady/Documents/workspace/DavidGrapher/libModGeogebra42/jlm_greek.jar"/>
+	<classpathentry kind="lib" path="/Users/cbrady/Documents/workspace/DavidGrapher/libModGeogebra42/jlm_cyrillic.jar"/>
+	<classpathentry kind="lib" path="/Users/cbrady/Documents/workspace/DavidGrapher/libModGeogebra42/jlatexmath.jar"/>
+	<classpathentry kind="lib" path="/Users/cbrady/Documents/workspace/DavidGrapher/libModGeogebra42/geogebra_usb.jar"/>
+	<classpathentry kind="lib" path="/Users/cbrady/Documents/workspace/DavidGrapher/libModGeogebra42/geogebra_javascript.jar"/>
+	<classpathentry kind="lib" path="/Users/cbrady/Documents/workspace/DavidGrapher/libModGeogebra42/geogebra_3d.jar"/>
+	<classpathentry kind="lib" path="/Users/cbrady/Documents/workspace/DavidGrapher/libModGeogebra42/geogebra_gui.jar"/>
+	<classpathentry kind="lib" path="/Users/cbrady/Documents/workspace/DavidGrapher/libModGeogebra42/geogebra_algos.jar"/>
+	<classpathentry kind="lib" path="/Users/cbrady/Documents/workspace/DavidGrapher/libModGeogebra42/geogebra_properties.jar"/>
+	<classpathentry kind="lib" path="/Users/cbrady/Documents/workspace/DavidGrapher/libModGeogebra42/geogebra_cas.jar"/>
+	<classpathentry kind="lib" path="/Users/cbrady/Documents/workspace/DavidGrapher/libModGeogebra42/geogebra_main.jar"/>
+	<classpathentry kind="lib" path="/Users/cbrady/Documents/workspace/DavidGrapher/libModGeogebra42/geogebra_export.jar"/>
+	<classpathentry kind="lib" path="/Users/cbrady/Documents/workspace/DavidGrapher/libModGeogebra42/geogebra.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
