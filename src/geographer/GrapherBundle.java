@@ -11,11 +11,13 @@ import javax.swing.SwingUtilities;
 
 import geogebra.GeoGebraPanel;
 import geogebra.plugin.GgbAPI;
+import geographer.GrapherExtension.TabPanel;
 
 public class GrapherBundle {
 
 	private String name = "default";
 	private GeoGebraPanel grapher;
+	public GeoGebraPanel getPanel() { return grapher; }
 	private boolean showing = true; 
 	
 	private int top = 0;
@@ -71,8 +73,12 @@ public class GrapherBundle {
 		//refreshGImage();
 	}
 		
+	public void updateBounds()
+	{
+		grapher.setBounds(left, top, physWid, physHt);
+	}
 
-	public GrapherBundle( String name, JPanel pane )
+	public GrapherBundle( String name, final TabPanel pane )
 	{
 		if (name != null )  //send in null for default name
 			this.name = name;
@@ -92,12 +98,12 @@ public class GrapherBundle {
 		grapher.buildGUI();
 		
 		
-		pane.add(grapher);
 		
 		SwingUtilities.invokeLater( new Runnable() {
 			public void run() { 
 				setWidHeight(physWid,physHt);
 				ready = true;
+				pane.addGrapherPane(grapher);
 			}});
 	}
 		

@@ -4,12 +4,14 @@ import java.awt.Graphics;
 import java.awt.GridLayout;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
 
+import geogebra.GeoGebraPanel;
 import geogebra.plugin.GgbAPI;
 
 import org.nlogo.api.*;
@@ -18,7 +20,7 @@ import org.nlogo.app.App;
 public class GrapherExtension extends DefaultClassManager {
 
 	public static HashMap<String, GrapherBundle> graphers = new HashMap<String, GrapherBundle>();
-	public static JPanel geogebraTab = new JPanel( new GridLayout(3,0) );
+	public static TabPanel geogebraTab = new TabPanel();
 
 	
 	public GgbAPI getGgbAPI( String gname )
@@ -120,6 +122,7 @@ public class GrapherExtension extends DefaultClassManager {
 			{
 				gb.setLeft(left);
 				gb.setTop(top);
+				gb.updateBounds();
 			}
 		}
 	
@@ -147,6 +150,7 @@ public class GrapherExtension extends DefaultClassManager {
 				if (gb != null)
 				{
 					gb.setWidHeight(width, height);
+					gb.updateBounds();
 				}
 			}
 		}
@@ -214,5 +218,23 @@ public class GrapherExtension extends DefaultClassManager {
 	
 	}
 	
+	
+	
+	public static class TabPanel extends JPanel
+	{
+		//ArrayList<GeoGebraPanel> ggbs = new ArrayList<GeoGebraPanel>();
+		
+		public TabPanel()
+		{
+			super();
+			this.setLayout(null);
+		}
+		
+		public void addGrapherPane( GeoGebraPanel ggp )
+		{
+			this.add( ggp );
+		}
+		
+	}
 
 }
